@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="rectangle"></div>
+        <img  src="Assests/Image 2.png" alt="image" class="profile-picture">
+    <div class="details">
+        <h2 class = 'heading'>Pasindu sathsara</h2>
+        <p class="sub-heading">BSE Software Enginnering Hons <br> 
+        (The Open University of Sri Lanka)</p>
+    </div>
+    <div class="contact-detail">
+        <p class="contact"><i class="fa fa-phone"></i>&nbsp;&nbsp;0772253533</p>
+        <p class="contact"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;sathsara.psf99@gmail.com</p>
+        <p class="contact"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Gampola</p>
+    </div>
+    <div class="button">
+        <p class="button-Text">Click here to see resume</p>
+    </div>
+    <div class="overlay">
+       <i class="fa fa-times-circle" aria-hidden="true" id="close-button" ></i>
+         <div class="cv-container">
+            <img src="Assests/cv.png"  class="cv">
+        </div>
+    </div>
+
+    
+    <script>
+        document.querySelector('.button').addEventListener('click',function(){
+            document.querySelector('.overlay').style.display = 'flex';
+        })
+        
+        document.querySelector('#close-button').addEventListener('click', function(){
+            document.querySelector('.overlay').style.display = 'none';
+        })
+    </script>
+   
+    
+</body>
+</html>
